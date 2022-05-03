@@ -115,6 +115,7 @@ export function Signup() {
             required
             label="First Name"
             sx={{ margin: "4px" }}
+            style={{width:'300px',gap:'20px'}}
             variant="outlined"
             onChange={handleChange}
             onBlur={handleBlur}
@@ -137,6 +138,7 @@ export function Signup() {
             required
             label="Last Name"
             sx={{ margin: "4px" }}
+            style={{width:'300px',gap:'20px'}}
             variant="outlined"
             onChange={handleChange}
             onBlur={handleBlur}
@@ -157,6 +159,7 @@ export function Signup() {
             required
             label="Email"
             sx={{ margin: "4px" }}
+            style={{width:'300px',gap:'20px'}}
             variant="outlined"
             onChange={handleChange}
             onBlur={handleBlur}
@@ -177,6 +180,7 @@ export function Signup() {
             required
             label="User Name"
             sx={{ margin: "4px" }}
+            style={{width:'300px',gap:'20px'}}
             variant="outlined"
             onChange={handleChange}
             onBlur={handleBlur}
@@ -197,6 +201,7 @@ export function Signup() {
             required
             label="Phone No"
             sx={{ margin: "4px" }}
+            style={{width:'300px',gap:'20px'}}
             variant="outlined"
             onChange={handleChange}
             onBlur={handleBlur}
@@ -232,6 +237,7 @@ export function Signup() {
             label="Password"
             type={visible}
             sx={{ margin: "4px" }}
+            style={{width:'300px'}}
             variant="outlined"
             onChange={handleChange}
             onBlur={handleBlur}

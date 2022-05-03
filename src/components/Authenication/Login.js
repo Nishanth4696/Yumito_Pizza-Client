@@ -78,11 +78,11 @@ export function Login() {
           variant="h4"
           sx={{
             fontFamily: "Aladin",
-            fontSize: { sm: "35px", xs: "28px" },
+            fontSize: { sm: "100px", xs: "40px" },
             color: "white",
           }}
         >
-          Crunch & Munch
+          Yumi<span style={{color:'red'}}>to</span>
         </Typography>
       </div>
       <div className="formcontainer">
@@ -108,7 +108,8 @@ export function Login() {
             name="username"
             required
             label="User Name"
-            sx={{ margin: "4px" }}
+            sx={{ margin: "8px" }}
+            style={{width:'300px'}}
             variant="outlined"
             onChange={handleChange}
             onBlur={handleBlur}
@@ -139,6 +140,7 @@ export function Login() {
             label="Password"
             placeholder="Enter your password"
             sx={{ margin: "4px" }}
+            style={{width:'300px'}}
             variant="outlined"
             onChange={handleChange}
             onBlur={handleBlur}

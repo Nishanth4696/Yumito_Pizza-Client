@@ -56,7 +56,7 @@ function Cartproduct({
     });
   };
   return (
-    <Card sx={{ maxWidth: 320, margin: "10px" }}>
+    <Card sx={{ width: 200, margin: "10px" }}>
       <img
         src={image}
         className="img-fluid"
@@ -64,14 +64,16 @@ function Cartproduct({
         alt={productname}
       />
       <CardContent>
-        <Typography variant="h6">{productname}</Typography>
-        <Typography variant="h6">Size: {varient}</Typography>
-        <Typography variant="h6">Price:{Price}</Typography>
+        <Typography variant="h6" style={{fontWeight:'bold'}}>{productname}</Typography>
+        <Typography variant="h6" ><span style={{fontWeight:'bold'}}>Size:</span> {varient}</Typography>
+        <Typography variant="h6"><span style={{fontWeight:'bold'}}>Price:</span>{Price}</Typography>
       </CardContent>
       <CardActions className="details">
-        <IconButton onClick={() => onAdd(_id)}>+</IconButton>
+      <IconButton onClick={() => onSub(_id)}>-</IconButton>
+        
         <Typography variant="h6">{Quantity}</Typography>
-        <IconButton onClick={() => onSub(_id)}>-</IconButton>
+        <IconButton onClick={() => onAdd(_id)}>+</IconButton>
+       
         {deleteButton}
       </CardActions>
     </Card>

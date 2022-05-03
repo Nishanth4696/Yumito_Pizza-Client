@@ -18,7 +18,7 @@ export function Pizzalist() {
     history.push("/");
   }
   return (
-    <div className="pizzas-list">
+    <div className="pizzas-list" >
       {pizzas && pizzas.length < 0 ? (
         <Loader />
       ) : (

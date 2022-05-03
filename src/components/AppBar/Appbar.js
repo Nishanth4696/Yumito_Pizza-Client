@@ -50,9 +50,9 @@ export function Appbar() {
       <Toolbar variant="dense">
         <img src={logo} alt="logo" className="logo" />
         <Typography
-          sx={{ fontFamily: "Pacifico", fontSize: { xs: "18px", sm: "26px" } }}
+          sx={{ fontFamily: "Pacifico", fontSize: { xs: "18px", sm: "50px" } }}
         >
-          Crunch & Munch
+          Yumi<span style={{color:'red'}}>to</span>
         </Typography>
 
         <Dialog open={open} onClose={handleClose}>

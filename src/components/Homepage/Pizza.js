@@ -50,15 +50,18 @@ export function Pizza({ pizza, index }) {
     <Card
       key={index}
       sx={{
-        maxWidth: "340px",
+        display:'flex',
+        flexWrap:'wrap',
+        maxWidth: "400px",
+        width:'300px',
         padding: "5px",
         margin: "10px",
         backgroundColor: "#f3f0f0",
         borderRadius: "15px",
       }}
     >
-      <h2>{pizza.name}</h2>
-      <div className="text-center">
+      <h2 style={{marginLeft:'20px'}}>{pizza.name}</h2>
+      <div className="text-center" style={{width:'300px'}}>
         <div className="img-container">
           <img
             src={pizza.image}
@@ -111,6 +114,7 @@ export function Pizza({ pizza, index }) {
             size="medium"
             variant="contained"
             onClick={() => addtocart(pizza, varient, quantity)}
+            style={{margin:20}}
           >
             Add to Cart
           </Button>

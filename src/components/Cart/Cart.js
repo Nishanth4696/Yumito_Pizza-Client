@@ -115,7 +115,7 @@ export function Cart() {
         My Cart🛒
       </Typography>
       <div className="cart-page">
-        <div className="cartpage">
+        <div className="cartpage" style={{height:'min-content'}}>
           {products.map(
             ({ productname, _id, image, varient, quantity, price }) => (
               <Cartproduct
@@ -132,8 +132,9 @@ export function Cart() {
                     className="movie-show-button"
                     color="error"
                     aria-label="delete movie"
+                    style={{marginLeft:'auto'}}
                   >
-                    Remove
+                   
                     <DeleteIcon />
                   </IconButton>
                 }
@@ -170,6 +171,7 @@ export function Cart() {
                 }}
                 variant="contained"
                 color="warning"
+                style={{margin:'20px'}}
               >
                 Pay Now
               </Button>
