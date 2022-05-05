@@ -292,7 +292,7 @@ const formvalidationSchema = Yup.object({
     .max(10, "Please Enter the valid phone number"),
   password: Yup.string()
     .required("Please Enter your password")
-    .min(8, "Too short password")
+    .min(5, "Too short password")
     .required("Please fill the password field"),
 });
 

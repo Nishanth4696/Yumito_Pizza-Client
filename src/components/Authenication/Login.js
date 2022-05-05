@@ -3,7 +3,7 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import { useHistory } from "react-router";
 import Typography from "@mui/material/Typography";
-import { InputAdornment, Tooltip, IconButton } from "@mui/material";
+import { InputAdornment, Tooltip, IconButton, Icon } from "@mui/material";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
@@ -13,6 +13,7 @@ import { useFormik } from "formik";
 import { API_URL } from "../../globalconstant.js";
 import Snackbar from "@mui/material/Snackbar";
 import MuiAlert from "@mui/material/Alert";
+import VpnKeyIcon from '@mui/icons-material/VpnKey';
 
 export function Login() {
   const [open, setOpen] = React.useState(false);
@@ -94,7 +95,10 @@ export function Login() {
               fontSize: { sm: "35px", xs: "28px" },
             }}
           >
-            Log In
+            Log In &nbsp;
+           <a href="https://github.com/Nishanth4696/Yumito_Pizza-Client/blob/master/README.md" target="_blank"> <IconButton ><VpnKeyIcon /></IconButton></a>
+              
+            
           </Typography>
           <TextField
             InputProps={{
@@ -187,7 +191,7 @@ const formvalidationSchema = Yup.object({
   username: Yup.string().required("Please fill your user name"),
   password: Yup.string()
     .required("Please Enter your password")
-    .min(8, "Too short password")
+    .min(5, "Too short password")
     .required("Please fill the password field"),
 });
 
