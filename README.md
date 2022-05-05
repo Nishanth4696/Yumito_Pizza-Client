@@ -9,6 +9,4 @@
 
 ### `Login's to access application`
 
-<div><p>Admin Access : Email - <b>Admin@gmail.com </b> ; password - <b> Admin </b> </p> </div>
-
-<div><p>User Access : Email - <b></b> ; password - <b> </b> </p> </div>
+<div><p>User Access : Username -  <b>Sudhan </b> ; password - <b>sudhan@123 </b> </p> </div>
