@@ -1,6 +1,6 @@
 # Deployment Links
 
-<a href="https://yumitopizzas.netlify.app" target='_blank'>https://yumitopizzas.netlify.app</a>
+<a href="https://yumitopizzas.netlify.app" target="_blank">https://yumitopizzas.netlify.app</a>
 
 <p>Frontend Repo <a href="https://github.com/Nishanth4696/Yumito_Pizza-Client">https://github.com/Nishanth4696/Yumito_Pizza-Client </a></p>
 
